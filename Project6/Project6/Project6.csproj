@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{376C6BA8-6BB5-4141-95FF-8A8C65C1DA97}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Project6</RootNamespace>
+    <AssemblyName>Project6</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Burger.cs" />
+    <Compile Include="Calculating.cs" />
+    <Compile Include="CheeseCake.cs" />
+    <Compile Include="CheesePizza.cs" />
+    <Compile Include="ChickenBurger.cs" />
+    <Compile Include="DoubleCheeseBurger.cs" />
+    <Compile Include="drink.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="drink.Designer.cs">
+      <DependentUpon>drink.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dessert.cs" />
+    <Compile Include="eathere.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eathere.designer.cs">
+      <DependentUpon>eathere.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IceCream.cs" />
+    <Compile Include="MeatPizza.cs" />
+    <Compile Include="menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menu.Designer.cs">
+      <DependentUpon>menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Minuman.cs" />
+    <Compile Include="MushroomPizza.cs" />
+    <Compile Include="Order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Order.designer.cs">
+      <DependentUpon>Order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderingSystem.cs" />
+    <Compile Include="Original.cs" />
+    <Compile Include="Pancake.cs" />
+    <Compile Include="Pizza.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Pudding.cs" />
+    <Compile Include="RestaurantSystem.cs" />
+    <Compile Include="Schwarma.cs" />
+    <Compile Include="VeggieBurger.cs" />
+    <EmbeddedResource Include="drink.resx">
+      <DependentUpon>drink.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eathere.resx">
+      <DependentUpon>eathere.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menu.resx">
+      <DependentUpon>menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order.resx">
+      <DependentUpon>Order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\DataSources\MeatPizza.datasource" />
+    <None Include="Properties\DataSources\MushroomPizza.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Resources\kisspng-pizza-cheese-manakish-flatbread-5bea00f32dbf31.4503393315420623231874.png" />
+    <Content Include="Resources\kisspng-pizza-hut-hamburger-kebab-take-out-chicken-meat-5ac8cde84f1367.0639104815231093523239.png" />
+    <Content Include="Resources\kisspng-pizza-italian-cuisine-shawarma-dish-sushi-kebab-5aca44e3204a02.4663727315232053471323.png" />
+    <Content Include="Resources\kisspng-pizza-italian-cuisine-take-out-barbecue-chicken-mushroom-pizza-5a8d4cde95d626.9073994215192096946137.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
